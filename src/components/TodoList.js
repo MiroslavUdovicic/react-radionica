@@ -14,11 +14,11 @@ class TodoList extends React.Component {
   render() {
     const { todos } = this.props;
     return (
-      <div>
-        <h3>todo list</h3>
-        <ul>
+      <div className="listContainer">
+        <h1>Todo List</h1>
+        <ul className="list">
           {todos.map(todo => (
-            <li key={todo.text} onClick={this.handleClick(todo)}>
+            <li key={todo.text} onClick={this.handleClick(todo)} className={todo.completed ? 'checked' : null}>
               <input type="checkbox" disabled checked={todo.completed} />
               {todo.text}
             </li>

@@ -37,7 +37,7 @@ class Home extends Component {
     const { todos } = this.state;
     return (
       <Layout1>
-        <section>
+        <section className="todoList">
           <NewTodo addTodo={this.addNewTodo} />
           <TodoList todos={todos} markCompleted={this.markCompleted} />
         </section>

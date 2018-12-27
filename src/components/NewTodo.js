@@ -24,9 +24,9 @@ class NewTodo extends React.Component {
   render() {
     const { newTodoText } = this.state;
     return (
-      <div>
-        <input type="text" value={newTodoText} onChange={this.handleChange} />
-        <button onClick={this.handleClick}>Add todo</button>
+      <div className="addTodo">
+        <input type="text" value={newTodoText} onChange={this.handleChange} className="todoInput" />
+        <button onClick={this.handleClick} className="btn">Add Todo</button>
       </div>
     );
   }

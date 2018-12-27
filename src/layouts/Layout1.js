@@ -4,9 +4,9 @@ class Layout1 extends Component {
   render() {
     return (
       <div>
-        <header>header</header>
+        <header>React Radionica</header>
         <main>{this.props.children}</main>
-        <footer>footer</footer>
+        <footer>Quantox Technology</footer>
       </div>
     );
   }
